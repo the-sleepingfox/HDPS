@@ -4,8 +4,8 @@ app= Flask(__name__)
 
 @app.route('/')
 def start():
-    return 'Server is Running'
+    return render_template("index.html")
 
 @app.route('/hdps')
 def home():
-    return render_template("index.html")
+    return "Server is Running"
